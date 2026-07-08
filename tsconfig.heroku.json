@@ -1,0 +1,16 @@
+{
+  "extends": "./tsconfig.build.json",
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.json",
+    "scripts/copy-assets.ts"
+  ],
+  "exclude": [
+    "node_modules",
+    "dist",
+    "coverage",
+    "test",
+    "serverless-deploy",
+    "azure-deploy"
+  ]
+}

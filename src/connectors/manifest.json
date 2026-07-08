@@ -1,0 +1,79 @@
+{
+  "author": {
+    "name": "RingCentral Labs"
+  },
+  "serverUrl": "",
+  "platforms": [
+    {
+      "redirectUri": "https://apps.ringcentral.com/integration/ringcentral-embeddable/latest/redirect.html",
+      "documentationUrl": "",
+      "auth": {
+        "type": "apiKey",
+        "apiKey": {
+          "name": "AroFlo API credentials",
+          "page": {
+            "title": "Auth",
+            "content": [
+              {
+                "uiSchema": {
+                  "ui:placeholder": ""
+                },
+                "description": "",
+                "type": "string",
+                "const": "apiKey",
+                "title": "API Secret Key",
+                "required": true
+              }
+            ]
+          }
+        },
+        "oauth": {
+          "redirectUri": "https://apps.ringcentral.com/integration/ringcentral-embeddable/latest/redirect.html",
+          "authUrl": "",
+          "clientId": "",
+          "customState": "",
+          "scope": ""
+        }
+      },
+      "displayName": "AroFlo",
+      "description": "",
+      "releaseNotesUrl": "",
+      "contactPageUrl": "",
+      "enableExtensionNumberLoggingSetting": false,
+      "fallbackContactPageUrl": "",
+      "canOpenLogPage": false,
+      "enableFallbackContactPageUrl": false,
+      "serverUrl": "https://lite-http-tunnel-s52m.onrender.com",
+      "embedUrls": [],
+      "settings": [],
+      "writeReviewUrl": "",
+      "embeddedOnCrmPage": {},
+      "logPageUrl": "",
+      "contactTypes": [
+        "Contact"
+      ],
+      "version": "0.1.0",
+      "logoUrl": "",
+      "environment": {
+        "type": "fixed",
+        "url": "https://aroflo.com"
+      },
+      "logFormat": "text/plain",
+      "useLicense": false,
+      "name": "AroFlo",
+      "page": {
+        "messageLog": {
+          "additionalFields": []
+        },
+        "useContactSearch": false,
+        "callLog": {
+          "additionalFields": [],
+          "logPageUrl": "",
+          "canOpenLogPage": false
+        },
+        "disableContactCache": false
+      },
+      "getSupportUrl": ""
+    }
+  ]
+}

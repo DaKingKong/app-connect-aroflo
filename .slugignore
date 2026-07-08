@@ -1,0 +1,10 @@
+.env
+.env.*
+db.sqlite
+*.sqlite
+*.sqlite3
+coverage
+azure-deploy
+serverless-deploy
+test-aroflo-clients.js
+test

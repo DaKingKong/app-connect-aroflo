@@ -1,0 +1,73 @@
+{
+  "name": "app-connect-aroflo",
+  "description": "RingCentral App Connect connector server for AroFlo.",
+  "addons": [
+    "heroku-postgresql"
+  ],
+  "env": {
+    "APP_SERVER": {
+      "description": "Public HTTPS URL of this Heroku app, for example https://your-app.herokuapp.com.",
+      "required": true
+    },
+    "OVERRIDE_APP_SERVER": {
+      "description": "Same public HTTPS URL as APP_SERVER; used by App Connect core when returning crmManifest.",
+      "required": true
+    },
+    "APP_SERVER_SECRET_KEY": {
+      "description": "Shared secret used by App Connect to sign and encrypt server-side data.",
+      "generator": "secret"
+    },
+    "IS_PROD": {
+      "description": "Production flag for App Connect core.",
+      "value": "true"
+    },
+    "AROFLO_BASE_URL": {
+      "description": "AroFlo API base URL.",
+      "value": "https://api.aroflo.com/"
+    },
+    "AROFLO_ACCEPT": {
+      "description": "AroFlo API response format.",
+      "value": "text/json"
+    },
+    "AROFLO_U_ENCODED": {
+      "description": "AroFlo uEncoded value from Site Administration > AroFlo API.",
+      "required": true
+    },
+    "AROFLO_P_ENCODED": {
+      "description": "AroFlo pEncoded value from Site Administration > AroFlo API.",
+      "required": true
+    },
+    "AROFLO_ORG_ENCODED": {
+      "description": "AroFlo orgEncoded value from Site Administration > AroFlo API.",
+      "required": true
+    },
+    "AROFLO_HOST_IP": {
+      "description": "Optional public outbound IP if AroFlo requires HostIP.",
+      "required": false
+    },
+    "AROFLO_NOTE_FILTER": {
+      "description": "AroFlo ClientNote filter value for created notes.",
+      "value": "Internal Only"
+    },
+    "AROFLO_NOTE_STICKY": {
+      "description": "Whether created AroFlo ClientNotes are sticky.",
+      "value": "false"
+    },
+    "ADMIN_EXTENSION_ID_DEV_PASS_LIST": {
+      "description": "Optional comma-separated admin extension IDs.",
+      "required": false
+    },
+    "RINGCENTRAL_SERVER": {
+      "description": "RingCentral server URL if required by this App Connect setup.",
+      "required": false
+    },
+    "RINGCENTRAL_CLIENT_ID": {
+      "description": "RingCentral client id if required by this App Connect setup.",
+      "required": false
+    },
+    "RINGCENTRAL_CLIENT_SECRET": {
+      "description": "RingCentral client secret if required by this App Connect setup.",
+      "required": false
+    }
+  }
+}
